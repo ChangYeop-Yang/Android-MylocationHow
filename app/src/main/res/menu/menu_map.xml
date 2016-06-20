@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    /* 테마여행 아이콘 */
+    <item
+        android:id="@+id/MapTheme"
+        app:showAsAction="always"
+        android:title="@string/MapMenuTheme"
+        android:orderInCategory="2"
+        android:icon="@drawable/ic_localbus">
+        /* 테마여행 하위메뉴 */
+        <menu>
+            /* 주변 관광지 */
+            <item
+                android:id="@+id/MapRangeCulture"
+                android:title="@string/MapMenuCulture"
+                android:icon="@drawable/ic_rangeculture"
+                app:showAsAction="always"/>
+            /* 주변 행사 */
+            <item
+                android:id="@+id/MapRangeFestival"
+                android:title="@string/MapMenuFestival"
+                android:icon="@drawable/ic_festival"
+                app:showAsAction="always"/>
+            /* 해수욕장 */
+            <item
+                android:id="@+id/MapBeach"
+                android:title="@string/MapMenuBeach"
+                android:icon="@drawable/ic_beach"
+                app:showAsAction="always"/>
+            /* 수목원 */
+            <item
+                android:id="@+id/MapTree"
+                android:title="@string/MapMenuTree"
+                android:icon="@drawable/ic_florist"
+                app:showAsAction="always"/>
+            /* 온천 */
+            <item
+                android:id="@+id/MapWater"
+                android:title="@string/MapMenuWater"
+                android:icon="@drawable/ic_claw"
+                app:showAsAction="always"/>
+            /* 박물관 */
+            <item
+                android:id="@+id/MapMuseum"
+                android:title="@string/MapMenuMuseum"
+                android:icon="@drawable/ic_museum"
+                app:showAsAction="always"/>
+        </menu>
+    </item>
+    /* 경로 아이콘 */
+    <item
+        android:id="@+id/MapDrawing"
+        android:title="@string/MapMenuDrawing"
+        app:showAsAction="always"
+        android:orderInCategory="3"
+        app:actionViewClass="android.widget.Switch" />
+    /* 사진 아이콘 */
+    <item
+        android:id="@+id/MapCamara"
+        android:title="@string/MapMenuPhoto"
+        app:showAsAction="always"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_photo">
+        <menu>
+            <!-- 앨범 -->
+            <item
+                android:id="@+id/MapAlbum"
+                android:title="@string/MapMenuPhoto"
+                android:icon="@drawable/ic_pin"
+                app:showAsAction="always"/>
+            <!-- 경로 -->
+            <item
+                android:id="@+id/MapLine"
+                android:title="@string/MapMenuDrawing"
+                android:icon="@drawable/ic_polyline"
+                app:showAsAction="always"/>
+        </menu>
+    </item>
+</menu>

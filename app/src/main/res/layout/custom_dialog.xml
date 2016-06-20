@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:fitsSystemWindows="true">
+
+        <!-- Custom Dialog ImageView -->
+        <ImageView
+            android:id="@+id/CustomDialogImageView"
+            android:layout_width="match_parent"
+            android:minWidth="200dp"
+            android:layout_height="200dp"
+            android:contentDescription="@string/DialogImageView"
+            android:src="@drawable/ic_picture"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="center"/>
+
+        <!-- Custom Dialog EditText Layout -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+        <!-- Title AppCompat EditText -->
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/CustomDialogTitleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/DialogTitle"
+            android:layout_margin="5dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Custom Dialog EditText Layout -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+            <!-- Comment AppCompat EditText -->
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/CustomDialogCommentEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/DialogComment"
+                android:layout_margin="5dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Custom Dialog Read Button Layout -->
+        <LinearLayout
+            android:id="@+id/CustomDialogReadLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <!-- Custom Dialog Delete Button -->
+            <Button
+                android:id="@+id/CustomDialogDeleteButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_drop"
+                android:padding="10dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:text="@string/DialogDelete"
+                android:textColor="#727272"/>
+            <!-- Custom Dialog Share Button -->
+            <Button
+                android:id="@+id/CustomDialogShareButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableLeft="@drawable/ic_share_gray"
+                android:layout_weight="1"
+                android:text="@string/DialogShare"
+                android:textColor="#727272"/>
+        </LinearLayout>
+
+        <!-- Custom Dialog Write Button Layout -->
+        <LinearLayout
+            android:id="@+id/CustomDialogWriteLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <!-- Custom Dialog Save Button -->
+            <Button
+                android:id="@+id/CustomDialogSaveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableLeft="@drawable/ic_save_gray"
+                android:layout_weight="1"
+                android:text="@string/DialogSave"
+                android:textColor="#727272"/>
+            <!-- Custom Dialog Cancel Button -->
+            <Button
+                android:id="@+id/CustomDialogCancelButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/ic_cancel"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:text="@string/DialogCancel"
+                android:textColor="#727272"/>
+        </LinearLayout>
+</LinearLayout>

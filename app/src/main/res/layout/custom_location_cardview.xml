@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LocationCustomListView"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    /* CustomLinear */
+    <LinearLayout
+        android:id="@+id/CustomLinear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        /* Custom Image Linear */
+        <LinearLayout
+            android:id="@+id/CustomImageLinear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="3"
+            android:orientation="vertical">
+        /* ICON ImageView */
+        <ImageView
+            android:id="@+id/CustomImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/LocationCustomIcon"/>
+        /* Distance TextView */
+        <TextView
+            android:id="@+id/CustomDistanceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/LocationCustomDistance"
+            android:layout_margin="5dp"
+            android:gravity="left"
+            android:textColor="#0288D1"/>
+        </LinearLayout>
+
+        /* Text Linear Layout */
+        <LinearLayout
+            android:id="@+id/CustomTextLinear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            /* Title TextView */
+            <TextView
+                android:id="@+id/CustomTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/LocationCustomTitle"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="#212121"/>
+            /* Address TextView */
+            <TextView
+                android:id="@+id/CustomAddressText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/LocationCustomAddress"
+                android:layout_margin="5dp"
+                android:gravity="left"
+                android:textColor="#727272"/>
+
+            /* Custom Button Linear */
+            <LinearLayout
+                android:id="@+id/CustomButtonLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                /* Call Button */
+                <Button
+                    style="@style/AppTheme"
+                    android:id="@+id/CustomCallButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="3dp"
+                    android:drawableLeft="@drawable/ic_call_green"
+                    android:textSize="20dp"
+                    android:text="@string/LocationCustomCall"
+                    android:textColor="#8BC34A"
+                    android:background="?android:attr/selectableItemBackground"/>
+                /* Maker Button */
+                <Button
+                    style="@style/AppTheme"
+                    android:id="@+id/CustomPlaceButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="3dp"
+                    android:textColor="#727272"
+                    android:textSize="20dp"
+                    android:text="@string/LocationCustomPlace"
+                    android:drawableLeft="@drawable/ic_place_gray"
+                    android:background="?android:attr/selectableItemBackground"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

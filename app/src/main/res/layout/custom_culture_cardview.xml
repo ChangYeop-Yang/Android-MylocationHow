@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/CustomCultureCardView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="?android:attr/selectableItemBackground"
+    app:cardUseCompatPadding="8dp"
+    card_view:cardCornerRadius="5dp">
+    /* Custom Card Layout */
+    <LinearLayout
+        android:id="@+id/CustomCultureCardTotalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        /* Custom ImageView */
+        <ImageView
+            android:id="@+id/CustomCultureCardImage"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/CultureImage"/>
+        /* TextLayout */
+        <LinearLayout
+            android:id="@+id/CustomCultureCardTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            /* Title TextView */
+            <TextView
+                android:id="@+id/CustomCultureCardTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/CultureTitle"
+                android:textColor="#212121"
+                android:layout_margin="10dp" />
+            /* Address TextView */
+            <TextView
+                android:id="@+id/CustomCardAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/CultureAddress"
+                android:textColor="#727272"
+                android:layout_margin="10dp" />
+
+            /* Button Layout */
+            <LinearLayout
+                android:id="@+id/CustomCultureButtonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                /* Call Button */
+                <Button
+                    android:id="@+id/CustomCultureCallButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableLeft="@drawable/ic_call_green"
+                    android:text="@string/CultureTel"
+                    android:textColor="#8BC34A"
+                    android:padding="10dp" />
+                /* Map Button */
+                <Button
+                    android:id="@+id/CustomCultureMapButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableLeft="@drawable/ic_place_gray"
+                    android:text="@string/CultureMap"
+                    android:textColor="#727272"
+                    android:padding="10dp" />
+                /* Detailed Button */
+                <Button
+                    android:id="@+id/CustomCultureDetailedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawableLeft="@drawable/ic_search_gray"
+                    android:text="@string/CultureDetailed"
+                    android:textColor="#727272"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

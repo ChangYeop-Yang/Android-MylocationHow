@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">#8BC34A</item>
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryDark">#1976D2</item>
+        <item name="colorControlHighlight">#BBDEFB</item>
+        <item name="colorControlNormal">#B6B6B6</item>
+        <item name="colorButtonNormal">#2196F3</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    /* Fab Labels */
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+</resources>

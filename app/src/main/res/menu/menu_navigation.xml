@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    /* 기본 메뉴 */
+    <item android:title="@string/NavigationBasic">
+        <menu>
+            /* 카메라 */
+            <item
+                android:id="@+id/Camara"
+                android:title="@string/NavigationPhoto"
+                android:icon="@drawable/ic_photo"
+                android:orderInCategory="1"/>
+            /* 앨범 */
+            <item
+                android:id="@+id/Album"
+                android:title="@string/NavigationAlbum"
+                android:icon="@drawable/ic_album"
+                android:orderInCategory="2"/>
+            /* 위치 */
+            <item
+                android:id="@+id/Map"
+                android:title="@string/NavigationLocation"
+                android:icon="@drawable/ic_explore"
+                android:orderInCategory="3"/>
+        </menu>
+    </item>
+
+    /* 정보 메뉴 */
+    <item android:title="@string/NavigationInformation">
+        <menu>
+            /* 문화 정보 */
+            <item
+                android:id="@+id/Culture"
+                android:title="@string/NavigationCulture"
+                android:icon="@drawable/ic_culture"/>
+            /* 주변 정보 */
+            <item
+                android:id="@+id/Range"
+                android:title="@string/NavigationRange"
+                android:icon="@drawable/ic_store"/>
+            /* 지역 정보 */
+            <item
+                android:id="@+id/Local"
+                android:title="@string/NavigationLocal"
+                android:icon="@drawable/ic_local"/>
+        </menu>
+    </item>
+
+    /* 기타 메뉴 */
+    <item android:title="@string/NavigationEtc">
+        <menu>
+        /* 종료 */
+        <item
+            android:id="@+id/Exit"
+            android:title="@string/NavigationExit"
+            android:icon="@drawable/ic_exit"/>
+        </menu>
+    </item>
+</menu>

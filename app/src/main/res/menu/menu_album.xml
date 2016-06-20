@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    /* 검색 아이콘 */
+    <item
+        android:id="@+id/AlbumMenuSearch"
+        app:showAsAction="always"
+        android:title="@string/AlbumMenuSearch"
+        android:orderInCategory="1"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:icon="@drawable/ic_search"/>
+    <!-- 정렬 -->
+    <item
+        android:id="@+id/AlbumMenuSort"
+        app:showAsAction="always"
+        android:orderInCategory="2"
+        android:title="@string/AlbumMenuSort"
+        android:icon="@drawable/ic_sort">
+        <menu>
+            <!-- 이름차순 -->
+            <item
+                android:id="@+id/AlbumMenuName"
+                android:title="@string/AlbumMenuName"
+                android:icon="@drawable/ic_title_sort"
+                android:orderInCategory="1"/>
+            <!-- 주소차순 -->
+            <item
+                android:id="@+id/AlbumMenuAddress"
+                android:title="@string/AlbumMenuAddress"
+                android:icon="@drawable/ic_address_sort"
+                android:orderInCategory="2"/>
+            <!-- 별점차순 -->
+            <item
+                android:id="@+id/AlbumMenuScore"
+                android:title="@string/AlbumMenuScore"
+                android:icon="@drawable/ic_rating_sort"
+                android:orderInCategory="3"/>
+        </menu>
+    </item>
+</menu>

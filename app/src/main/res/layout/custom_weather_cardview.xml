@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="10dp"
+    android:fitsSystemWindows="true">
+    <!-- Weather Total Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Weather Image Layout -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:gravity="center">
+            <!-- Weather ImageView -->
+            <ImageView
+                android:id="@+id/WeatherCustomImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:contentDescription="@string/WeatherIconImage"/>
+        </LinearLayout>
+
+        <!-- Weather Information Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Weather Time / Information Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!-- Weather TextView -->
+                <TextView
+                    android:id="@+id/WeatherCustomTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/WeatherCustomCal"
+                    android:textColor="#727272"/>
+                <!-- Weather Tab TextView -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/WeatherTab"
+                    android:textColor="#727272"/>
+                <!-- Weather Information State TextView -->
+                <TextView
+                    android:id="@+id/WeatherInformationTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/WeatherCustomState"
+                    android:textColor="#727272"/>
+            </LinearLayout>
+
+            <!-- Weather Temp Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+                <!-- Weather Low Temp TextView -->
+                <TextView
+                    android:id="@+id/WeatherCustomRowTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/WeatherCustomLowTemp"
+                    android:textColor="#0288D1"/>
+                <!-- Weather Tab TextView -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/WeatherTab"
+                    android:textColor="#727272"/>
+                <!-- Weather High Temp TextView -->
+                <TextView
+                    android:id="@+id/WeatherCustomHighTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/WeatherCustomMaxTemp"
+                    android:textColor="#D32F2F"/>
+            </LinearLayout>
+
+            <!-- Weather Rain TextView -->
+            <TextView
+                android:id="@+id/WeatherRainTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/WeatherCustomRain"
+                android:textColor="#727272"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.net.location.mylocationhow" >
+
+    <!--Permission-->
+    <uses-permission android:name="android.permission.INTERNET"/> <!--Data-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> <!--GPS-->
+    <uses-permission android:name="android.permission.VIBRATE"/> <!--VIBRATE-->
+    <uses-permission android:name="android.permission.CALL_PHONE"/> <!--PHONE-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> <!-- SDCARD WRITE -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> <!-- SDCARD READ -->
+    <uses-permission android:name="android.permission.CAMERA"/> <!-- CAMERA -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/> <!-- AUDIO -->
+
+    <!-- Feature -->
+    <uses-feature android:name="android.hardware.camera"/> <!-- CAMERA -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_how"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name_han">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- KakaoLink SDK -->
+            <data android:scheme="@string/kakao_scheme" android:host="@string/kakaolink_host" />
+        </activity>
+
+        <!-- Kakao SDK -->
+        <meta-data android:name="com.kakao.sdk.AppKey" android:value="@string/kakao_app_key"/>
+        <!-- FaceBook SDK -->
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <provider android:authorities="com.facebook.app.FacebookContentProvider1623068197966017"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"/>
+        <!-- FaceBook Login Activity -->
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+
+        /* JAVA */
+        <activity android:name=".MapActivity"/> <!-- Map Activity -->
+        <activity android:name=".RangeActivity"/> <!-- Range Activity -->
+        <activity android:name=".CultureActivity"/> <!-- Culture Activity -->
+        <activity android:name=".BaseActivity"/> <!-- Base Activity -->
+        <activity android:name=".CultureDetailActivity"/> <!-- Detail Activity -->
+        <activity android:name=".PhotoActivity"/> <!-- Photo Activity -->
+        <activity android:name=".AlbumActivity"/> <!-- Album Activity -->
+        <activity android:name=".RoadActivity"/><!-- Road Activity -->
+        <activity android:name=".RoadDetailActivity"/> <!-- RoadDetail Activity -->
+        <activity android:name=".SettingActivity"/> <!-- Setting Activity -->
+        <activity android:name="basic.CustomDialog.StampDialog" android:theme="@android:style/Theme.Dialog" />
+    </application>
+</manifest>

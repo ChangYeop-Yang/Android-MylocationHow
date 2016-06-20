@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/MapTotalRelative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    /* Daum Map */
+    <RelativeLayout
+        android:id="@+id/MapDaumMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    /* ToolBarLayout */
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/MapAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        /* ToolBar */
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/MapToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+        /* TextLocation */
+        <TextView
+            android:id="@+id/ToolBarMapText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/LocationText"
+            android:layout_marginTop="5dp"
+            android:textColor="#FFFFFF"/>
+    </android.support.design.widget.AppBarLayout>
+
+    /* Float Menu */
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/MapMultipleDownMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_alignBottom="@+id/MapDaumMap"
+        android:layout_alignRight="@+id/MapDaumMap"
+        app:fab_addButtonColorPressed="#8BC34A"
+        app:fab_addButtonColorNormal="#8BC34A"
+        app:fab_labelStyle="@style/menu_labels_style">
+        /* Location Button */
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/MapMyLocationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_size="mini"
+            app:fab_title="@string/MapMyLocation"
+            app:fab_icon="@drawable/ic_location_blk"
+            app:fab_colorPressed="#f1f1f1"
+            app:fab_colorNormal="#fafafa" />
+        /* Food Button */
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/MapFoodButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_size="mini"
+            app:fab_title="@string/MapFood"
+            app:fab_icon="@drawable/ic_restaurant_white"
+            app:fab_colorNormal="#8BC34A" />
+        /* Hotel Button */
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/MapHotelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_size="mini"
+            app:fab_icon="@drawable/ic_hotel"
+            app:fab_colorPressed="#f1f1f1"
+            app:fab_title="@string/MapLodging"
+            app:fab_colorNormal="#fafafa" />
+        /* Pharmacy Button */
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/MapPharmacyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_title="@string/MapPharmacy"
+            app:fab_size="mini"
+            app:fab_icon="@drawable/ic_pharmacy_white"
+            app:fab_colorNormal="#8BC34A" />
+        /* Bank Button */
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/MapBankButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_size="mini"
+            app:fab_title="@string/MapBank"
+            app:fab_icon="@drawable/ic_atm"
+            app:fab_colorPressed="#f1f1f1"
+            app:fab_colorNormal="#fafafa" />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>

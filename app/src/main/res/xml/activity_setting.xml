@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 사진 부분 -->
+    <PreferenceCategory android:title="사진 설정">
+        <!-- 사진 동영상 설정 -->
+        <ListPreference
+            android:defaultValue="12000"
+            android:dependency="PhotoTime"
+            android:title="동영상 촬영 시간 설정"
+            android:key="PhotoTime"
+            android:summary="동영상 촬영 시간을 설정합니다."
+            android:entryValues="@array/PhotoVideoValue"
+            android:entries="@array/PhotoVideo"/>
+    </PreferenceCategory>
+
+    <!-- 앨범 부분 -->
+    <PreferenceCategory android:title="앨범 설정">
+        <!-- 앨범 조회 아이템 개수 설정 -->
+        <ListPreference
+            android:defaultValue="3"
+            android:dependency="Album"
+            android:title="조회 아이템 개수 설정"
+            android:key="Album"
+            android:summary="조회 될 아이템 개수를 설정합니다."
+            android:entryValues="@array/AlbumCountArray"
+            android:entries="@array/AlbumCountArray"/>
+        <!-- 앨범 공유 설정 -->
+        <ListPreference
+            android:defaultValue="image/*"
+            android:dependency="AlbumShare"
+            android:title="공유 아이템 설정"
+            android:key="AlbumShare"
+            android:summary="공유 할 아이템을 설정합니다."
+            android:entryValues="@array/AlbumShareValue"
+            android:entries="@array/AlbumShare"/>
+    </PreferenceCategory>
+
+    <!-- 위치 정보 부분 -->
+    <PreferenceCategory android:title="위치정보 설정">
+        <!-- 위치 길찾기 설정 -->
+        <ListPreference
+            android:defaultValue="CAR"
+            android:dependency="Navigation"
+            android:title="길찾기 종류 설정"
+            android:key="Navigation"
+            android:summary="길찾기 종류를 설정합니다."
+            android:entryValues="@array/MapNavigationValue"
+            android:entries="@array/MapNavigation"/>
+        <!-- 위치 반경 설정 -->
+        <ListPreference
+            android:defaultValue="20000"
+            android:dependency="MapRange"
+            android:title="위치정보 조회 반경 설정"
+            android:key="MapRange"
+            android:summary="위치정보를 조회 할 반경을 설정합니다."
+            android:entryValues="@array/MapRangeArrayValue"
+            android:entries="@array/MapRangeArray"/>
+        <!-- 위치 라인 선 색상 설정 -->
+        <ListPreference
+            android:defaultValue="RED"
+            android:dependency="Line"
+            android:title="선색 설정"
+            android:key="Line"
+            android:summary="지도에 표시 될 선색을 설정합니다."
+            android:entryValues="@array/LocationLineArray"
+            android:entries="@array/LocationLineArray"/>
+    </PreferenceCategory>
+
+    <!-- 어플리케이션 정보 부분 -->
+    <PreferenceCategory android:title="어플리케이션 정보">
+        <!-- 개발자 정보 확인 -->
+        <Preference
+            android:summary="개발자 정보를 확인합니다."
+            android:title="개발자 정보">
+            <!-- 개발자 홈페이지 이동 -->
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://yeop9657.blog.me"/>
+        </Preference>
+        <!-- 개발자 이메일 전송 -->
+        <Preference
+            android:summary="개발자에게 메일을 보냅니다."
+            android:title="이메일 보내기">
+            <!-- 개발자 이메일 전송 -->
+            <intent
+                android:action="android.intent.action.SENDTO"
+                android:data="mailto:yeop9657@naver.com"/>
+        </Preference>
+        <!-- 어플리케이션 사용방법 -->
+        <Preference
+            android:summary="어플리케이션 사용방법을 확인합니다."
+            android:title="사용방법">
+            <!-- 사용 방법 확인 -->
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://yeop9657.blog.me"/>
+        </Preference>
+        <!-- 문의 및 건의사항 -->
+        <Preference
+            android:summary="문의 및 건의사항을 작성합니다."
+            android:title="문의 및 건의사항">
+            <!-- 문의 및 건의사항 -->
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://me2.do/xpxjRjTf"/>
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

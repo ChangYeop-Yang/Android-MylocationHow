@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:fitsSystemWindows="true">
+
+    <!-- Photo AppBar -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/PhotoAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        /* ToolBar */
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/PhotoToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- Photo ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- Photo Scroll Sub layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- Photo TITLE CardView -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/PhotoTitleCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                card_view:cardCornerRadius="5dp">
+                <!-- Photo Edit EditText Layout -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <!-- AppCompat EditText -->
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/PhotoTitleEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/PhotoTitle"
+                        android:singleLine="true"
+                        android:textColor="#212121"
+                        android:textSize="20dp"
+                        android:layout_margin="10dp" />
+                </android.support.design.widget.TextInputLayout>
+            </android.support.v7.widget.CardView>
+            <!-- Photo CardView -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/PhotoCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                card_view:cardCornerRadius="5dp">
+                <!-- Photo Layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!-- Photo ImageView -->
+                    <ImageView
+                        android:id="@+id/PhotoImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/ic_picture"
+                        android:scaleType="center"
+                        android:contentDescription="@string/PhotoImage"
+                        android:background="?android:attr/selectableItemBackground"/>
+                    <!-- RatingBar -->
+                    <RatingBar
+                        android:id="@+id/PhotoRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:numStars="5" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- Photo Map CardView -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/PhotoMapCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                card_view:cardCornerRadius="5dp">
+                <!-- Photo Map Layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!-- Photo Map ImageView -->
+                    <ImageView
+                        android:id="@+id/PhotoMapImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="fitXY"
+                        android:contentDescription="@string/PhotoMapImage"/>
+                    <!-- Photo Map TextView -->
+                    <TextView
+                        android:id="@+id/PhotoMapTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/PhotoAddress"
+                        android:textColor="#727272"
+                        android:textSize="15dp"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp" />
+                </LinearLayout>
+                </android.support.v7.widget.CardView>
+            <!-- Photo Comment CardView -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/PhotoCommentCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                card_view:cardCornerRadius="5dp">
+                <!-- Photo Comment EditText Layout -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+                    <!-- AppCompat EditText -->
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/PhotoCommentEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/PhotoComment"
+                        android:textColor="#727272"
+                        android:padding="10dp" />
+                </android.support.design.widget.TextInputLayout>
+            </android.support.v7.widget.CardView>
+            <!-- Photo Reserve CardView -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/PhotoReserveCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                card_view:cardCornerRadius="5dp">
+                <!-- Photo Reserve Main ImageView -->
+                <ImageView
+                    android:id="@+id/PhotoReserveImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/ic_picture"
+                    android:contentDescription="@string/PhotoReserve"
+                    android:scaleType="center"
+                    android:background="?android:attr/selectableItemBackground"/>
+            </android.support.v7.widget.CardView>
+            <!-- Photo Movie CardView -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/PhotoMovieCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                card_view:cardCornerRadius="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <!-- Photo SurfaceView -->
+                    <SurfaceView
+                        android:id="@+id/PhotoSurface"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp" />
+                        <!-- Photo REC Strat -->
+                        <Button
+                            android:id="@+id/PhotoRecButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_rec"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:text="@string/PhotoRec"
+                            android:textColor="#727272"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <!-- Photo SNS CardView -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/PhotoSNSCardView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                card_view:cardCornerRadius="5dp"
+                android:layout_margin="10dp">
+                <!-- SNS Layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <!-- SNS TextView -->
+                    <TextView
+                        android:id="@+id/PhotoSNSText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/DetailSNSText"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15dp"
+                        android:textColor="#8BC34A"/>
+                    <!-- SNS Button -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <!-- KakaoTalk Button -->
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:id="@+id/PhotoKakaoBut"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_kakaotalk"
+                            android:text="@string/DetailkakaoTalk"
+                            android:textColor="#3C1E1E"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="?android:attr/selectableItemBackground"/>
+                        <!-- Facebook Button -->
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:id="@+id/PhotoFacebookBut"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_facebook"
+                            android:layout_margin="10dp"
+                            android:text="@string/DetailFacebook"
+                            android:textColor="#3B579D"
+                            android:layout_weight="1"
+                            android:background="?android:attr/selectableItemBackground"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

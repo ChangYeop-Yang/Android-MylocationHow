@@ -1,0 +1,267 @@
+<resources>
+    <string name="app_name">MylocationHow</string>
+    <string name="app_name_han">내 위치에는?</string>
+    <string name="action_settings">Settings</string>
+    /* APIKEY */
+    <string name="DAUM_APIKEY">816a50c3b14d8bddaa2040ae9e004507</string>
+    <string name="DAUM_LOCALAPIKEY">c896970a9f4e025479f9b092bd04c6cf</string>
+    <string name="TOUR_APIKEY">C2d%2FZz%2BaNt0m7s5ShL8GDXiwNqTXE3XETIIaRJDoSxvWxWm929sMakv3t6ZBz28U8cdE0N74NQkIAC1ppwaknw%3D%3D</string>
+    <string name="GOOGLE_APIKEY">AIzaSyAPwZbV6iLNwLv23_3l-dmS_E6pVX34e0I</string>
+    <string name="facebook_app_id">1623068197966017</string>
+    /* Main Memu */
+    <string name="MemuSetting">설정</string>
+    /* Range Menu */
+    <string name="RangeMemuSearch">검색</string>
+    /* Album Menu */
+    <string name="AlbumMenuSort">정렬</string>
+    <string name="AlbumMenuSearch">검색</string>
+    <string name="AlbumMenuName">제목차순</string>
+    <string name="AlbumMenuAddress">주소차순</string>
+    <string name="AlbumMenuScore">별점차순</string>
+    /* MapMenu */
+    <string name="MapMenuTheme">테마여행</string>
+    <string name="MapMenuLocal">지역여행</string>
+    <string name="MapMenuPhoto">앨범</string>
+    <string name="MapMenuCulture">주변 관광지</string>
+    <string name="MapMenuFestival">주변 행사</string>
+    <string name="MapMenuBeach">해수욕장</string>
+    <string name="MapMenuTree">수목원</string>
+    <string name="MapMenuWater">온천</string>
+    <string name="MapMenuMuseum">박물관</string>
+    <string name="MapMenuDrawing">경로</string>
+    /* Detail Menu */
+    <string name="DetailPhoto">화면저장</string>
+    /* Main */
+    <string name="MainGPSComment">GPS기능이 탑재되었거나, Wi-Fi 기능이 탑재된 단말기 또는 Cell ID에 기반한 단말기 등을 비롯하여 위치정보수집기능이 주기적으로 이동통신 및 Wi-Fi 기지국에 대한 위치정보를 수집합니다. 이러한 정보는, 이용자의 현재 위치를 확인하고 서비스를 제공하는데 사용됩니다. 그 외 활용할 목적으로 서버에 수집, 전송, 또는 제 3자에게 제공하지 않습니다.</string>
+    <string name="MainGPSCheck">위치 서비스 활성화가 되어 있지 않습니다. 설정화면으로 이동하시겠습니까?</string>
+    /* MainFragment 1 */
+    <string name="WeatherExceptionText">내일 날씨</string>
+    <string name="WeatherExceptionTomorrowText">모레 날씨</string>
+    <string name="WeatherIconImage">날씨아이콘</string>
+    <string name="WeatherTimeText">기상시간</string>
+    <string name="WeatherTempText">온도</string>
+    <string name="WeatherWindText">바람상태</string>
+    <string name="WeatherRainText">강수확률</string>
+    <string name="WeatherText">현재 날씨</string>
+    <string name="WeatherTab">/</string>
+    /* MainFragment 2 */
+    <string name="LocationRange">주변 정보현황</string>
+    <string name="LocationFoodRange">주변 음식점 현황</string>
+    <string name="LocationLodgingRange">주변 숙박시설 현황</string>
+    <string name="LocationOilRange">주변 주유소 현황</string>
+    <string name="LocationConvenienceRange">주변 편의점 현황</string>
+    <string name="LocationText">현재위치</string>
+    <string name="LocationFoot">발도장 현황</string>
+    <string name="LocationFootCulture">∙ 문화 발도장 현황</string>
+    <string name="LocationFootRoad">∙ 코스 발도장 현황</string>
+    /* Navigation */
+    <string name="NavigationBasic">기본 메뉴</string>
+    <string name="NavigationInformation">정보 메뉴</string>
+    <string name="NavigationEtc">기타 메뉴</string>
+    <string name="NavigationCulture">문화</string>
+    <string name="NavigationPhoto">사진</string>
+    <string name="NavigationRange">주변</string>
+    <string name="NavigationLocal">코스</string>
+    <string name="NavigationLocation">위치</string>
+    <string name="NavigationAlbum">앨범</string>
+    <string name="NavigationRecommend">추천</string>
+    <string name="NavigationExit">종료</string>
+    /* LocationCustomListView */
+    <string name="LocationCustomTitle">제목</string>
+    <string name="LocationCustomIcon">아이콘</string>
+    <string name="LocationCustomAddress">주소</string>
+    <string name="LocationCustomDistance">남은거리</string>
+    <string name="LocationCustomCall">전화</string>
+    <string name="LocationCustomPlace">이동</string>
+    /* WeatherCustomListView */
+    <string name="WeatherCustomState">날씨상태</string>
+    <string name="WeatherCustomLowTemp">최저온도</string>
+    <string name="WeatherCustomMaxTemp">최고온도</string>
+    <string name="WeatherCustomRain">강수확률</string>
+    <string name="WeatherCustomCal">예보날짜</string>
+    <string name="WeatherCustomInformation1">내일</string>
+    <string name="WeatherCustomInformation2">모레</string>
+    /* AlbumCustomListView */
+    <string name="AlbumCustomTitle">제목</string>
+    <string name="AlbumCustomImage">사진</string>
+    <string name="AlbumCustomAddress">주소</string>
+    <string name="AlbumCustomLocation">위치</string>
+    <string name="AlbumCustomDetail">상세정보</string>
+    <string name="AlbumCustomDrop">삭제</string>
+    <string name="AlbumCustomShare">공유하기</string>
+    <string name="AlbumRollback">새로고침</string>
+    <string name="AlbumNext">다음</string>
+    <string name="AlbumProve">이전</string>
+    /* CultureCustomListView */
+    <string name="CultureImage">문화이미지</string>
+    <string name="CultureTitle">이름</string>
+    <string name="CultureAddress">주소</string>
+    <string name="CultureTel">전화</string>
+    <string name="CultureMap">위치</string>
+    <string name="CultureDetailed">상세정보</string>
+    /* MapCustomListView */
+    <string name="MapCustomImage">사진이미지</string>
+    <string name="MapCustomTitle">제목</string>
+    <string name="MapCustomAddress">주소</string>
+    /* Map */
+    <string name="MapFood">음식점</string>
+    <string name="MapLodging">숙소</string>
+    <string name="MapPharmacy">약국</string>
+    <string name="MapBank">은행</string>
+    <string name="MapMyLocation">내위치</string>
+    <string name="MapInstall">다음 지도 애플리케이션 설치를 위해서 Google Play Store로 이동하시겠습니까?</string>
+    <string name="MapNavigation">다음 지도 애플리케이션을 이용하여서 길 찾기를 실행하시겠습니까?</string>
+    /* Range */
+    <string name="RangeNextButton">다음</string>
+    <string name="RangeProvButton">이전</string>
+    <string name="RangeFoodButton">음식점</string>
+    <string name="RangeHotelButton">숙소</string>
+    <string name="RangeParkingButton">주차장</string>
+    <string name="RangeOilButton">주유소</string>
+    <string name="RangeBankButton">은행</string>
+    <string name="RangeCafeButton">카페</string>
+    <string name="RangeConvenienceButton">편의점</string>
+    <string name="RangePharmacyButton">약국</string>
+    <string name="RangeHospitalButton">병원</string>
+    /* Tab Custom */
+    <string name="TabCustomText">Tab Text</string>
+    /* Culture */
+    <string name="CultureProve">이전</string>
+    <string name="CultureNext">다음</string>
+    <string name="CultureFind">검색</string>
+    <string name="CultureDate">날짜 선택</string>
+    <string-array name="CultureAdminArea">
+        <item>서울</item>
+        <item>인천</item>
+        <item>대전</item>
+        <item>대구</item>
+        <item>광주</item>
+        <item>부산</item>
+        <item>울산</item>
+        <item>세종</item>
+        <item>경기도</item>
+        <item>강원도</item>
+        <item>충청북도</item>
+        <item>충청남도</item>
+        <item>경상북도</item>
+        <item>경상남도</item>
+        <item>전라북도</item>
+        <item>전라남도</item>
+        <item>제주도</item>
+    </string-array>
+    <string-array name="CultureType">
+        <item>관광지</item>
+        <item>문화시설</item>
+        <item>레포츠</item>
+        <item>쇼핑</item>
+    </string-array>
+    /* Detail */
+    <string name="DetailImage">상세이미지</string>
+    <string name="DetailTitleText">제목</string>
+    <string name="DetailAddressText">주소</string>
+    <string name="DetailTelBut">전화</string>
+    <string name="DetailLocationBut">위치</string>
+    <string name="DetailText">상세설명</string>
+    <string name="DetailNaver">NAVER 검색결과</string>
+    <string name="DetailRangeFood">주변음식점</string>
+    <string name="DetailRangeHotel">주변숙소</string>
+    <string name="DetailNext">다음 사진</string>
+    <string name="DetailProve">이전 사진</string>
+    <string name="DetailSNSText">공유하기</string>
+    <string name="DetailkakaoTalk">카카오톡</string>
+    <string name="DetailFacebook">페이스북</string>
+    <string name="DetailFoot">발도장</string>
+    /* Photo */
+    <string name="PhotoTitle">제목을 입력하세요.</string>
+    <string name="PhotoImage">사진</string>
+    <string name="PhotoMapImage">경로</string>
+    <string name="PhotoAddress">주소</string>
+    <string name="PhotoComment">설명을 입력하세요.</string>
+    <string name="PhotoReserve">예비사진</string>
+    <string name="PhotoRec">녹화시작</string>
+    /* Setting */
+    <string-array name="LocationLineArray">
+        <item>RED</item>
+        <item>BLACK</item>
+        <item>BLUE</item>
+        <item>GRAY</item>
+        <item>YELLOW</item>
+    </string-array>
+    <string-array name="MapNavigation">
+        <item>자동차</item>
+        <item>대중교통</item>
+        <item>도보</item>
+    </string-array>
+    <string-array name="MapNavigationValue">
+        <item>CAR</item>
+        <item>PUBLICTRANSIT</item>
+        <item>FOOT</item>
+    </string-array>
+    <string-array name="MapRangeArrayValue">
+        <item>5000</item>
+        <item>10000</item>
+        <item>15000</item>
+        <item>20000</item>
+    </string-array>
+    <string-array name="MapRangeArray">
+        <item>5Km</item>
+        <item>10Km</item>
+        <item>15Km</item>
+        <item>20Km</item>
+    </string-array>
+    <string-array name="AlbumCountArray">
+        <item>3</item>
+        <item>5</item>
+        <item>7</item>
+        <item>10</item>
+        <item>15</item>
+    </string-array>
+    <string-array name="AlbumShare">
+        <item>Photo</item>
+        <item>Video</item>
+    </string-array>
+    <string-array name="AlbumShareValue">
+        <item>image/*</item>
+        <item>video/*</item>
+    </string-array>
+    <string-array name="PhotoVideo">
+        <item>7초</item>
+        <item>14초</item>
+        <item>30초</item>
+        <item>1분</item>
+        <item>2분</item>
+    </string-array>
+    <string-array name="PhotoVideoValue">
+        <item>7000</item>
+        <item>14000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+    </string-array>
+    /* Road */
+    <string name="RoadCustomTitle">제목</string>
+    <string name="RoadCustomDetail">상세정보</string>
+    <string name="RoadCustomLocation">위치</string>
+    <string name="RoadCustomImage">이미지</string>
+    <string name="RoadOverViewInformation">개요</string>
+    <string name="RoadOverView">상세설명</string>
+    <string name="RoadInformationTitle">제목</string>
+    <string name="RoadInformationDetail">설명</string>
+    <string name="RoadNextButton">다음</string>
+    <string name="RoadProveButton">이전</string>
+    <string name="RoadFootButton">발도장</string>
+    /* Dialog */
+    <string name="DialogImageView">사진</string>
+    <string name="DialogComment">상세설명을 입력해주세요.</string>
+    <string name="DialogTitle">제목을 입력해주세요.</string>
+    <string name="DialogShare">공유</string>
+    <string name="DialogDate">날짜</string>
+    <string name="DialogDelete">삭제</string>
+    <string name="DialogSave">저장</string>
+    <string name="DialogCancel">취소</string>
+    /* Route */
+    <string name="RouteAddress">주소</string>
+    <string name="RouteDate">날짜</string>
+    <string name="RouteDelete">삭제</string>
+    <string name="RouteDrawing">경로그리기</string>
+</resources>

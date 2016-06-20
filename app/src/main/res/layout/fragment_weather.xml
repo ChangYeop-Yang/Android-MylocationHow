@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Weather Information CardView -->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        android:layout_margin="10dp">
+
+        <!-- Text Weather Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Weather Information TextView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/WeatherText"
+                android:layout_margin="10dp"
+                android:textColor="#8BC34A"/>
+
+            /* Now Weather Layout */
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Weather ImageView Layout -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <!-- Weather Now ImageView -->
+                    <ImageView
+                        android:id="@+id/WeatherNowImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="64dp"
+                        android:contentDescription="@string/WeatherIconImage" />
+                </LinearLayout>
+
+                <!-- Weather Text Layout -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="vertical">
+                    <!-- Weather Temp TextView -->
+                    <TextView
+                        android:id="@+id/WeatherTempTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/WeatherTempText"
+                        android:textSize="35sp"
+                        android:textColor="#8BC34A"/>
+                    <!-- Weather Wind TextView -->
+                    <TextView
+                        android:id="@+id/WeatherWindTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/WeatherWindText"
+                        android:textColor="#727272"/>
+                    <!-- Weather State / Time Layout -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp">
+                        <!-- Weather Time TextView -->
+                        <TextView
+                            android:id="@+id/WeatherTimeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/WeatherTimeText"
+                            android:textColor="#727272"/>
+                        <!-- "/" TextView -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/WeatherTab"
+                            android:textColor="#727272" />
+                        <!-- Weather State TextView -->
+                        <TextView
+                            android:id="@+id/WeatherStateTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/WeatherCustomState"
+                            android:textColor="#727272"/>
+                    </LinearLayout>
+
+                    <!-- Weather Rain TextView -->
+                    <TextView
+                        android:id="@+id/WeatherRainTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/WeatherRainText"
+                        android:textColor="#727272"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!-- Weather Exception CardView -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/WeatherExcptionCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        android:layout_margin="10dp">
+        /* Next Weather Layout */
+        <LinearLayout
+            android:id="@+id/NextWeatherLinear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            /* Weather Exception Information TextView */
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/WeatherExceptionText"
+                android:layout_margin="10dp"
+                android:textColor="#8BC34A" />
+
+            <!-- Weather Exception RecyclerView -->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/WeatherExcpetionRecycler1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            /* Weather Exception Information Tomorrow TextView */
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/WeatherExceptionTomorrowText"
+                android:layout_margin="10dp"
+                android:textColor="#8BC34A" />
+
+            <!-- Weather Exception RecyclerView -->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/WeatherExcpetionRecycler2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

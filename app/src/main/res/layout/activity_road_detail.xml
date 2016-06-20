@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Road AppBar Layout -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/RoadAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        /* ToolBar */
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/RoadToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- Road Scroller View -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RoadAppBar"
+        android:layout_above="@+id/RoadMakerButton">
+        <!-- Road Scroller Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Road OverView CardView -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/RoadOVerViewCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RoadAppBar"
+                android:layout_margin="10dp"
+                card_view:cardCornerRadius="10dp">
+                <!-- Road OverView Layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!-- Road OverView TextView Information -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/RoadOverViewInformation"
+                        android:textColor="#212121"
+                        android:textSize="15dp"
+                        android:id="@+id/RoadTitleTextView" />
+                    <!-- Road OverView TextView -->
+                    <TextView
+                        android:id="@+id/RoadOverViewTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/RoadOverView"
+                        android:textColor="#727272"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!-- Road Location CardView -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                card_view:cardCornerRadius="10dp">
+                <!-- Road Location ImageView -->
+                <ImageView
+                    android:id="@+id/RoadLocationImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:contentDescription="@string/RoadCustomImage"/>
+            </android.support.v7.widget.CardView>
+            <!-- Road Information CardView -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                card_view:cardCornerRadius="10dp">
+                <!-- Road Information Layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!-- Road Information ImageView -->
+                    <ImageView
+                        android:id="@+id/RoadInformationImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:contentDescription="@string/RoadCustomImage"
+                        android:scaleType="fitXY"/>
+                    <!-- Road Information TextView -->
+                    <TextView
+                        android:id="@+id/RoadInformationTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/RoadInformationTitle"
+                        android:textColor="#212121" />
+                    <!-- Road Detail TextView -->
+                    <TextView
+                        android:id="@+id/RoadDetailTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/RoadInformationDetail"
+                        android:textColor="#727272"/>
+                    <!-- Road Information Button Layout -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <!-- Road Prove Button -->
+                        <Button
+                            android:id="@+id/RoadProveButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:text="@string/RoadProveButton"
+                            android:textColor="#727272"/>
+                        <!-- Road Next Button -->
+                        <Button
+                            android:id="@+id/RoadNextButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:text="@string/RoadNextButton"
+                            android:textColor="#727272"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Road Maker Button -->
+    <Button
+        android:id="@+id/RoadMakerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_foot_gray_24dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/RoadFootButton"
+        android:textColor="#727272"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

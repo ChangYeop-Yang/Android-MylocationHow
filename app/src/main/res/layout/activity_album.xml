@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/AlbumAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        /* ToolBar */
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/AlbumToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- RecyclerView -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/AlbumRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    /* Album Floating Menu */
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/AlbumMultipleDownMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:fab_addButtonColorPressed="#8BC34A"
+        app:fab_addButtonColorNormal="#8BC34A"
+        app:fab_labelStyle="@style/menu_labels_style"
+        app:layout_anchor="@+id/AlbumRecyclerView"
+        app:layout_anchorGravity="bottom|right|end">
+        /* Album Next */
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/AlbumNextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_size="mini"
+            app:fab_title="@string/AlbumNext"
+            app:fab_icon="@drawable/ic_next36"
+            app:fab_colorNormal="#8BC34A" />
+        /* Album Back */
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/AlbumBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_size="mini"
+            app:fab_title="@string/AlbumProve"
+            app:fab_icon="@drawable/ic_arrow_back"
+            app:fab_colorPressed="#f1f1f1"
+            app:fab_colorNormal="#fafafa" />
+        /* Album RollBack */
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/AlbumRollBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_size="mini"
+            app:fab_title="@string/AlbumRollback"
+            app:fab_icon="@drawable/ic_rollback"
+            app:fab_colorNormal="#8BC34A" />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</android.support.design.widget.CoordinatorLayout>

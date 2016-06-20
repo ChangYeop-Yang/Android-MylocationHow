@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RangeTotalLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    /* Range AppBar */
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/RangeAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        /* ToolBar */
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/RangeToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        /* TabLayout */
+        <android.support.design.widget.TabLayout
+            android:id="@+id/RangeTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.AppBarLayout>
+
+    /* RangeListView */
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RangeRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    /* Range Floating Menu */
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/RangeMultipleDownMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:fab_addButtonColorPressed="#8BC34A"
+        app:fab_addButtonColorNormal="#8BC34A"
+        app:fab_labelStyle="@style/menu_labels_style"
+        app:layout_anchor="@+id/RangeTotalLayout"
+        app:layout_anchorGravity="bottom|right|end">
+        /* Range Next */
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/RangeNextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_size="mini"
+            app:fab_title="@string/RangeNextButton"
+            app:fab_icon="@drawable/ic_next36"
+            app:fab_colorNormal="#8BC34A" />
+        /* Range Back */
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/RangeBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_size="mini"
+            app:fab_title="@string/RangeProvButton"
+            app:fab_icon="@drawable/ic_arrow_back"
+            app:fab_colorPressed="#f1f1f1"
+            app:fab_colorNormal="#fafafa" />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+</android.support.design.widget.CoordinatorLayout>

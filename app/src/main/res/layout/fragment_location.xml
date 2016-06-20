@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <!-- Location Map CardView -->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        card_view:cardCornerRadius="5dp"
+        android:layout_margin="10dp">
+        <!-- Image Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- Location TextView -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/LocationText"
+                android:layout_margin="10dp"
+                android:textColor="#8BC34A"/>
+            <!-- Location ImageView -->
+            <ImageView
+                android:id="@+id/LocationImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/LocationText"/>
+            <!-- Location Now TextView -->
+            <TextView
+                android:id="@+id/LocationNowText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/LocationText"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:textColor="#727272"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <!-- Location Range CardView -->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        android:layout_margin="10dp">
+        <!-- Location Range Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Location Range Food TextView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/LocationRange"
+                android:layout_margin="10dp"
+                android:textColor="#8BC34A"/>
+
+            <!-- Location Food Range Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <!-- Location Food TextView -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/LocationFoodRange"
+                    android:textColor="#727272"/>
+                <!-- Location Food TextView -->
+                <TextView
+                    android:id="@+id/LocationFoodTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/LocationFoodRange"
+                    android:textColor="#727272"/>
+            </LinearLayout>
+
+            <!-- Location Hotel Range Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <!-- Location Hotel TextView -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/LocationLodgingRange"
+                    android:textColor="#727272"/>
+                <!-- Location Hotel TextView -->
+                <TextView
+                    android:id="@+id/LocationHotelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/LocationLodgingRange"
+                    android:textColor="#727272"/>
+            </LinearLayout>
+
+            <!-- Location Oil Range Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <!-- Location Oil TextView -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/LocationOilRange"
+                    android:textColor="#727272"/>
+                <!-- Location Oil TextView -->
+                <TextView
+                    android:id="@+id/LocationOilTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/LocationOilRange"
+                    android:textColor="#727272"/>
+            </LinearLayout>
+
+            <!-- Location Convenience Range Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <!-- Location Convenience TextView -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/LocationConvenienceRange"
+                    android:textColor="#727272"/>
+                <!-- Location Convenience TextView -->
+                <TextView
+                    android:id="@+id/LocationConvenienceTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/LocationConvenienceRange"
+                    android:textColor="#727272"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!-- Location Foot CardView -->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        android:layout_margin="10dp">
+        <!-- Foot Range Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Location Foot Range TextView -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/LocationFoot"
+                android:textColor="#8BC34A" />
+
+            <!-- Location Foot Culture Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <!-- Location Foot Culture TextView -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/LocationFootCulture"
+                    android:textColor="#727272"/>
+                <!-- Location Foot Culture TextView -->
+                <TextView
+                    android:id="@+id/LocationCultureTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/LocationFootCulture"
+                    android:textColor="#727272"/>
+            </LinearLayout>
+
+            <!-- Location Foot Road Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <!-- Location Road Culture TextView -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/LocationFootRoad"
+                    android:textColor="#727272"/>
+                <!-- Location Road Culture TextView -->
+                <TextView
+                    android:id="@+id/LocationRoadTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/LocationFootRoad"
+                    android:textColor="#727272"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
