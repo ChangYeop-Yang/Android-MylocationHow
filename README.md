@@ -47,8 +47,10 @@ Range Display             |  Curse Display
 
 * * *
 
-**※ Etc**
+**※ Activity Link**
 
-http://yeop9657.blog.me
+> ⌘ Google Play Store: [Click](https://play.google.com/store/apps/details?id=com.net.location.mylocationhow)
+
+> ⌘ Naver Blog: [Click](http://yeop9657.blog.me/220584140829)
 
 * * *
