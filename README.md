@@ -53,6 +53,8 @@ Range Display             |  Curse Display
 
 > ⌘ Google Play Store: [Click](https://play.google.com/store/apps/details?id=com.net.location.mylocationhow)
 
+> ⌘ Slide Share: [Click](https://www.slideshare.net/Yangchangyeop/3-69988562)
+
 > ⌘ Naver Blog: [Click](http://yeop9657.blog.me/220584140829)
 
 * * *
