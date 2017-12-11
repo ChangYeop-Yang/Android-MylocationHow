@@ -2,7 +2,9 @@
 
 **※ Application Information**
 
-![](http://blogfiles.naver.net/20151231_287/yeop9657_14515574747774gRv7_PNG/MyLocationHow.png)
+<p align="center">
+  <img src="http://postfiles16.naver.net/20151231_287/yeop9657_14515574747774gRv7_PNG/MyLocationHow.png?type=w773">
+</p>
 
 > 여행을 다니면서 꼭 필요한 날씨, 주변 정보, 관광지 정보를 제공함과 동시에 한순간 한순간 여행에 소중한 추억을 실시간으로 기록할 수 있습니다.
 
