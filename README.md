@@ -6,6 +6,10 @@
   <img src="http://postfiles16.naver.net/20151231_287/yeop9657_14515574747774gRv7_PNG/MyLocationHow.png?type=w773" width="300" height="300">
 </p>
 
+<p align="center">
+  <img src="http://drive.google.com/uc?export=view&id=102IKEAIMY-unlpPQvy6m9TqeyfwnD8tq">
+</p>
+
 > 여행을 다니면서 꼭 필요한 날씨, 주변 정보, 관광지 정보를 제공함과 동시에 한순간 한순간 여행에 소중한 추억을 실시간으로 기록할 수 있습니다.
 
 * * *
@@ -43,13 +47,13 @@ Range Display             |  Curse Display
 
 **※ APP Demo Play**
 
-<p align="center">
-  <img src="http://drive.google.com/uc?export=view&id=102IKEAIMY-unlpPQvy6m9TqeyfwnD8tq">
-</p>
-
 |DEMO PLAY 1|DEMO PALY 2|
 |:---------:|:---------:|
 |![](http://drive.google.com/uc?export=view&id=1TyIK88aSNQYKRZ8Yon5PQs-ich4vlYyk)|![](http://drive.google.com/uc?export=view&id=1eJe6HXR18zgOQMeMzyDgNrepiw644c2p)|
+
+|DEMO PLAY 3|DEMO PALY 4|
+|:---------:|:---------:|
+|![](http://drive.google.com/uc?export=view&id=1VnRhMO5hTQXL5tPVOcnDARAJfIDEiWzK)|![](http://drive.google.com/uc?export=view&id=17x6IXrPs6gv4hesMF6wnWOEiB9yKqw9x)|
 
 * * *
 
