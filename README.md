@@ -47,6 +47,10 @@ Range Display             |  Curse Display
   <img src="http://drive.google.com/uc?export=view&id=102IKEAIMY-unlpPQvy6m9TqeyfwnD8tq">
 </p>
 
+|DEMO PLAY 1|DEMO PALY 2|
+|:---------:|:---------:|
+|![](http://drive.google.com/uc?export=view&id=1TyIK88aSNQYKRZ8Yon5PQs-ich4vlYyk)|![](http://drive.google.com/uc?export=view&id=1eJe6HXR18zgOQMeMzyDgNrepiw644c2p)|
+
 * * *
 
 **※ Application Award**
