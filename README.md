@@ -39,6 +39,13 @@ Range Display             |  Curse Display
 |⑥| 자신이 작성한 여행 일기를 친구나 가족들에게 SNS나 카카오톡을 통해서 공유할 수 있습니다.|
 |⑦| 자신이 다닌 여행 경로를 저장하여 여행이 끝난 뒤에 확인할 수 있습니다.|
 
+* * *
+
+**※ APP Demo Play**
+
+<p align="center">
+  <img src="http://drive.google.com/uc?export=view&id=102IKEAIMY-unlpPQvy6m9TqeyfwnD8tq">
+</p>
 
 * * *
 
