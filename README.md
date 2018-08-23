@@ -6,6 +6,8 @@
   <img src="http://postfiles16.naver.net/20151231_287/yeop9657_14515574747774gRv7_PNG/MyLocationHow.png?type=w773" width="300" height="300">
 </p>
 
+* * *
+
 <p align="center">
   <img src="http://drive.google.com/uc?export=view&id=102IKEAIMY-unlpPQvy6m9TqeyfwnD8tq">
 </p>
