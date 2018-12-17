@@ -9,11 +9,17 @@
 ## ★ Application Feature
 
 * 사진과 동영상을 통해서 자신만의 여행 일기를 작성할 수 있습니다.
+
 * 위치정보서비스를 통해서 여행 정보와 주변 정보를 받을 수 있습니다.
+
 * 여행 코스를 제공함으로써 여행 초보자들도 쉽게 여행을 즐길 수가 있습니다.
+
 * 정해진 스탬프 코스가 아닌 자신만의 스탬프 코스를 만들어서 새로운 스탬프 여행을 즐길 수가 있습니다.
+
 * 여행할 때 가장 중요한 날씨 정보를 제공하고 있습니다.
+
 * 자신이 작성한 여행 일기를 친구나 가족들에게 SNS나 카카오톡을 통해서 공유할 수 있습니다.
+
 * 자신이 다닌 여행 경로를 저장하여 여행이 끝난 뒤에 확인할 수 있습니다.
 
 ## ★ Application Running Display
@@ -37,11 +43,11 @@
 </p>
 
 |:video_camera: DETAIL DEMO PLAY 001|:video_camera: DETAIL DEMO PALY 002|
-|:--------------------------:|:--------------------------:|
+|:---------------------------------:|:---------------------------------:|
 |![](http://drive.google.com/uc?export=view&id=1TyIK88aSNQYKRZ8Yon5PQs-ich4vlYyk)|![](http://drive.google.com/uc?export=view&id=1eJe6HXR18zgOQMeMzyDgNrepiw644c2p)|
 
 |:video_camera: DETAIL DEMO PLAY 003|:video_camera: DETAIL DEMO PALY 004|
-|:--------------------------:|:--------------------------:|
+|:---------------------------------:|:---------------------------------:|
 |![](http://drive.google.com/uc?export=view&id=1VnRhMO5hTQXL5tPVOcnDARAJfIDEiWzK)|![](http://drive.google.com/uc?export=view&id=17x6IXrPs6gv4hesMF6wnWOEiB9yKqw9x)|
 
 ## ★ REFERENCE
