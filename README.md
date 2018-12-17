@@ -1,4 +1,4 @@
-# ■ MylocationHow
+# ■ MylocationHow <kbd>**MOBILE - Android**</kbd>
 
 * 여행을 다니면서 꼭 필요한 날씨, 주변 정보, 관광지 정보를 제공함과 동시에 한순간 한순간 여행에 소중한 추억을 실시간으로 기록할 수 있습니다.
 
