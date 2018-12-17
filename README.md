@@ -32,17 +32,17 @@
 
 ## ★ APP Demo Play
 
-|:video_camera: DEMO PLAY 001|:video_camera: DEMO PALY 002|
+<p align="center">
+  <img src="http://drive.google.com/uc?export=view&id=102IKEAIMY-unlpPQvy6m9TqeyfwnD8tq" width="460" height="750"/>
+</p>
+
+|:video_camera: DETAIL DEMO PLAY 001|:video_camera: DETAIL DEMO PALY 002|
 |:--------------------------:|:--------------------------:|
 |![](http://drive.google.com/uc?export=view&id=1TyIK88aSNQYKRZ8Yon5PQs-ich4vlYyk)|![](http://drive.google.com/uc?export=view&id=1eJe6HXR18zgOQMeMzyDgNrepiw644c2p)|
 
-|:video_camera: DEMO PLAY 003|:video_camera: DEMO PALY 004|
+|:video_camera: DETAIL DEMO PLAY 003|:video_camera: DETAIL DEMO PALY 004|
 |:--------------------------:|:--------------------------:|
 |![](http://drive.google.com/uc?export=view&id=1VnRhMO5hTQXL5tPVOcnDARAJfIDEiWzK)|![](http://drive.google.com/uc?export=view&id=17x6IXrPs6gv4hesMF6wnWOEiB9yKqw9x)|
-
-|:movie_camera: DEMO PLAY 005|
-|:--------------------------:|
-|<img src="http://drive.google.com/uc?export=view&id=102IKEAIMY-unlpPQvy6m9TqeyfwnD8tq" width="750" height="750"/>|
 
 ## ★ REFERENCE
 
