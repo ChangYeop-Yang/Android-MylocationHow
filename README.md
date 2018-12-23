@@ -22,6 +22,10 @@
 
 * 자신이 다닌 여행 경로를 저장하여 여행이 끝난 뒤에 확인할 수 있습니다.
 
+## ★ Structure for Application
+
+![](https://user-images.githubusercontent.com/20036523/50383664-fea07f80-06fb-11e9-80a9-a2acfe8edea6.png)
+
 ## ★ Application Running Display
 
 |:camera: Home - Weather Display|:camera: Home - Location Display|
